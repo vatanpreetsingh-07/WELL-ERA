@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Well-Era — Defy Gravity. Define Time.</title>
+  <meta name="description" content="Well-Era creates futuristic anti-gravity precision watches for the next generation. Experience zero-gravity balance, quantum precision, and bold Gen-Z design." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ Loading Screen ═══ -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">WELL<span>-ERA</span></div>
+      <div class="loader-bar-track">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ Custom Cursor ═══ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ═══ Scroll Progress ═══ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══ Navigation ═══ -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">WELL<span>-ERA</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#showcase">Collection</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#cta" class="nav-cta">Pre-Order</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ Hero Section ═══ -->
+  <section class="hero" id="hero">
+    <!-- Particle background -->
+    <div class="hero-particles" id="heroParticles"></div>
+    <!-- Light streaks -->
+    <div class="hero-streaks" id="heroStreaks"></div>
+    <!-- Ambient glow -->
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          Anti-Gravity Collection 2026
+        </div>
+        <h1>
+          Defy Gravity.<br />
+          <span class="gradient-text">Define Time.</span>
+        </h1>
+        <p class="hero-description">
+          Engineered for the fearless. Well-Era watches fuse anti-gravity precision 
+          with Gen-Z boldness — creating timepieces that float above the ordinary.
+        </p>
+        <div class="hero-buttons">
+          <a href="#showcase" class="btn btn-primary" id="heroCtaBtn">
+            Explore the Future
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#about" class="btn btn-outline">
+            Our Story
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-watch">
+          <img src="images/watch-hero.png" alt="Well-Era Anti-Gravity Watch floating in space" />
+        </div>
+        <div class="hero-watch-glow"></div>
+        <div class="hero-orbit"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ About Section ═══ -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-image reveal-left">
+        <img src="images/about-section.png" alt="Well-Era watch components floating in zero gravity" />
+        <div class="about-image-overlay"></div>
+      </div>
+      <div class="about-content reveal-right">
+        <span class="section-label">Our Philosophy</span>
+        <h2>Where <span class="gradient-text">Anti-Gravity</span> Meets Artistry</h2>
+        <p>
+          Born from the fascination with weightlessness, Well-Era reimagines horology 
+          for a generation that refuses limits. Every watch is crafted with aerospace-grade 
+          materials and suspended balance technology — making each tick feel like it defies physics.
+        </p>
+        <p>
+          We don't just build watches. We engineer wearable moments of zero gravity, 
+          designed for those who dare to rise above.
+        </p>
+        <div class="about-stats stagger">
+          <div class="about-stat" style="--i:0">
+            <span class="about-stat-number" data-count="50">0</span>
+            <span class="about-stat-label">Grams Weight</span>
+          </div>
+          <div class="about-stat" style="--i:1">
+            <span class="about-stat-number" data-count="100">0</span>
+            <span class="about-stat-label">Hour Power</span>
+          </div>
+          <div class="about-stat" style="--i:2">
+            <span class="about-stat-number" data-count="10">0</span>
+            <span class="about-stat-label">ATM Depth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Features Section ═══ -->
+  <section class="features" id="features">
+    <div class="section-header reveal">
+      <span class="section-label">Technology</span>
+      <h2 class="section-title">Built Beyond <span class="gradient-text">Limits</span></h2>
+      <p class="section-subtitle">
+        Four pillars of innovation that make Well-Era the most advanced Gen-Z watch on the planet.
+      </p>
+    </div>
+    <div class="features-grid stagger">
+      <div class="feature-card reveal" style="--i:0">
+        <div class="feature-icon">🪐</div>
+        <h3>Zero-Gravity Balance</h3>
+        <p>
+          Our magnetic levitation balance wheel floats inside the case, 
+          eliminating friction and delivering unmatched accuracy in any position.
+        </p>
+      </div>
+      <div class="feature-card reveal" style="--i:1">
+        <div class="feature-icon">🪶</div>
+        <h3>Ultra-Light Frame</h3>
+        <p>
+          Machined from aerospace titanium and graphene composite at just 50 grams — 
+          so light, you'll forget it's even there.
+        </p>
+      </div>
+      <div class="feature-card reveal" style="--i:2">
+        <div class="feature-icon">⚡</div>
+        <h3>Quantum Precision</h3>
+        <p>
+          Atomic-level oscillation powered by our Q-Core chip delivers accuracy 
+          to ±0.5 seconds per year. Unmatchable precision.
+        </p>
+      </div>
+      <div class="feature-card reveal" style="--i:3">
+        <div class="feature-icon">🎨</div>
+        <h3>Gen-Z Bold Design</h3>
+        <p>
+          Curated color palettes, holographic dials, and modular bands let you 
+          express your identity with every tick.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Product Showcase ═══ -->
+  <section class="showcase" id="showcase">
+    <div class="section-header reveal">
+      <span class="section-label">Collection</span>
+      <h2 class="section-title">The <span class="gradient-text">Anti-Gravity</span> Series</h2>
+      <p class="section-subtitle">
+        Two editions. One vision. Choose your weightless stance.
+      </p>
+    </div>
+    <div class="showcase-wrapper">
+      <div class="showcase-visual reveal-left">
+        <div class="showcase-watch">
+          <img src="images/watch-lavender.png" alt="Well-Era Lavender Edition watch" id="showcaseImg" />
+        </div>
+        <div class="showcase-bg-ring"></div>
+      </div>
+      <div class="showcase-info reveal-right">
+        <h2 id="showcaseTitle">Lavender Edition</h2>
+        <p id="showcaseDesc">
+          Wrapped in our signature lavender gradient with a holographic sapphire dial. 
+          The Lavender Edition is the flagship statement piece — bold, dreamy, and utterly unforgettable.
+        </p>
+        <div class="color-options">
+          <h4>Select Edition</h4>
+          <div class="color-swatches">
+            <button
+              class="color-swatch swatch-lavender active"
+              id="swatchLavender"
+              data-color="lavender"
+              aria-label="Lavender Edition"
+            ></button>
+            <button
+              class="color-swatch swatch-white"
+              id="swatchWhite"
+              data-color="white"
+              aria-label="White Edition"
+            ></button>
+          </div>
+          <div class="color-name" id="colorName">Lavender Nebula</div>
+        </div>
+        <div class="showcase-specs">
+          <div class="spec-item">
+            <span class="icon">⚖️</span> 50g Ultra-Light
+          </div>
+          <div class="spec-item">
+            <span class="icon">🔋</span> 100h Power
+          </div>
+          <div class="spec-item">
+            <span class="icon">💎</span> Sapphire Crystal
+          </div>
+          <div class="spec-item">
+            <span class="icon">🌊</span> 10 ATM Water
+          </div>
+        </div>
+        <div style="margin-top: 2rem;">
+          <a href="#cta" class="btn btn-primary">Pre-Order Now <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ Testimonials ═══ -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header reveal">
+      <span class="section-label">Voices</span>
+      <h2 class="section-title">What They <span class="gradient-text">Say</span></h2>
+      <p class="section-subtitle">
+        Early adopters are already living in the future.
+      </p>
+    </div>
+    <div class="testimonials-track-wrapper">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "The moment I put the Well-Era on, I felt the difference. 
+            It literally feels like nothing is on my wrist. The design is insane."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div class="testimonial-author-info">
+              <h4>Arjun K.</h4>
+              <span>Tech Enthusiast</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "I've never gotten so many compliments on a watch. The lavender is 
+            unique and the floating balance tech blew my mind."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SP</div>
+            <div class="testimonial-author-info">
+              <h4>Sofia P.</h4>
+              <span>Fashion Creator</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "As an engineer, I appreciate the tech. As a Gen-Z, I appreciate the vibes. 
+            Well-Era nailed both perfectly."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MR</div>
+            <div class="testimonial-author-info">
+              <h4>Marcus R.</h4>
+              <span>Software Engineer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "Replaced my smartwatch with the Well-Era. It's analog meets future 
+            meets art. The holographic dial caught everyone's eye."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">LT</div>
+            <div class="testimonial-author-info">
+              <h4>Luna T.</h4>
+              <span>Content Creator</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "50 grams?! I was skeptical but it's real. Feels like wearing pure air 
+            on your wrist. The white edition is clean."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JD</div>
+            <div class="testimonial-author-info">
+              <h4>James D.</h4>
+              <span>Fitness Influencer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            "The packaging, the unboxing, the watch itself — everything screams premium. 
+            Well-Era understands our generation."
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">NK</div>
+            <div class="testimonial-author-info">
+              <h4>Nisha K.</h4>
+              <span>Design Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel dots -->
+    <div class="testimonial-controls" id="testimonialControls"></div>
+  </section>
+
+  <!-- ═══ CTA Section ═══ -->
+  <section class="cta" id="cta">
+    <div class="cta-float cta-float-1"></div>
+    <div class="cta-float cta-float-2"></div>
+    <div class="cta-float cta-float-3"></div>
+    <div class="cta-content reveal">
+      <h2>Ready to <span class="gradient-text">Rise Above</span>?</h2>
+      <p>
+        Join the first 1,000 pioneers. Pre-order the Well-Era Anti-Gravity watch 
+        and experience time the way it was meant to be — weightless.
+      </p>
+      <a href="#" class="btn btn-white" id="ctaBtn">
+        Reserve Yours Now
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ Footer ═══ -->
+  <footer class="footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">WELL<span>-ERA</span></a>
+        <p>
+          Redefining time for the generation 
+          that breaks barriers and defies gravity.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#features">Technology</a></li>
+          <li><a href="#showcase">Collection</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Stay Weightless</h3>
+        <p style="font-size: 0.85rem; color: var(--gray-500); margin-bottom: 0.75rem;">
+          Get early access drops and updates.
+        </p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address" />
+          <button type="submit" class="newsletter-btn">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Well-Era. All rights reserved.</span>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ Chatbot Widget ═══ -->
+  <div class="chatbot-widget" id="chatbotWidget">
+    <button class="chatbot-toggle" id="chatbotToggle" aria-label="Toggle Chat">
+      <i class="fa-solid fa-message"></i>
+    </button>
+    <div class="chatbot-window" id="chatbotWindow">
+      <div class="chatbot-header">
+        <div class="chatbot-title">
+          <i class="fa-solid fa-robot"></i>
+          <span>Well-Era AI</span>
+        </div>
+        <button class="chatbot-close" id="chatbotClose" aria-label="Close Chat"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <div class="chat-msg bot-msg">
+          <div class="msg-avatar"><i class="fa-solid fa-robot"></i></div>
+          <div class="msg-content">Welcome to Well-Era! How can I help you today?</div>
+        </div>
+      </div>
+      <form class="chatbot-input-area" id="chatbotForm">
+        <input type="text" id="chatbotInput" placeholder="Type your message..." required autocomplete="off" />
+        <button type="submit" id="chatbotSend" aria-label="Send Message"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ═══ JavaScript ═══ -->
+  <script src="script.js"></script>
+</body>
+</html>
